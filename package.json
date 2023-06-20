@@ -1,0 +1,50 @@
+{
+  "name": "curso-platzi-react-avanzado",
+  "version": "1.0.0",
+  "description": "**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --history-api-fallback",
+    "lint": "standard",
+    "serve:dev": "webpack --mode 'development' && npx serve dist -s"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.1",
+    "standard": "^17.0.0",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0",
+    "webpack-pwa-manifest": "^4.0.0",
+    "wepack-cli": "^0.0.1-security",
+    "workbox-webpack-plugin": "^7.0.0"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.14",
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.9.0",
+    "react-router-dom": "^6.11.2",
+    "styled-components": "^5.3.11"
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  },
+  "eslintConfig": {
+    "extendes": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  }
+}
